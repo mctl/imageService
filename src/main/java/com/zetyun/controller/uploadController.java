@@ -37,7 +37,7 @@ public class uploadController {
         JSONObject result = new JSONObject();
         JSONObject data = new JSONObject();
         data.put("name", fileName);
-        data.put("path", "files/upload/" + fileName);
+        data.put("path", "/files/upload/" + fileName);
         data.put("isImage", imgsType.contains(file.getContentType()));
 
         result.put("code", "1");
